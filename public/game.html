@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lukway">
+  <link rel="shortcut icon" href="images/logo/icon_page.svg" type="image/x-icon">
+  <meta name="keywords" content="Juegos de Memoria - Cartas">
+  <meta name="description" content="Juego de Memoria con Cartas - Memory Game with Cards">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="css/game.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&family=Roboto+Mono:wght@600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/324d384509.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="configuration">
+    <img class="logo" src="images/logo/logo.svg" alt="Memory Game Logo" title="Memory Game">
+    <h2 class="caption category">Elige una <span class="highlight">categoria</span></h2>
+    <h2 class="caption difficulty hidden">Elige la <span class="highlight">dificultad</span></h2>
+    <button class="button-signout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
+
+    <div class="main_container category">
+      <button class="configuration_card category-developers">
+        <div class="configuration_img_container">
+          <img class="configuration_img" src="images/configuration_images/developers_tools.svg" alt="Categoría: Desarrolladores" title="Categoría: Desarrolladores">
+        </div>
+        <h3 class="configuration_caption">Desarrolladores</h3>
+      </button>
+      <button class="configuration_card category-countries">
+        <div class="configuration_img_container">
+          <img class="configuration_img" src="images/configuration_images/countries.svg" alt="Categoría: Países" title="Categoría: Países">
+        </div>
+        <h3 class="configuration_caption">Paises</h3>
+      </button>
+      <button class="configuration_card category-animals">
+        <div class="configuration_img_container">
+          <img class="configuration_img" src="images/configuration_images/animals.svg" alt="Categoría: Animales" title="Categoría: Animales">
+        </div>
+        <h3 class="configuration_caption">Animales</h3>
+      </button>
+    </div>
+
+    <div class="main_container difficulty hidden">
+      <button class="configuration_card difficulty-easy">
+        <div class="configuration_img_container">
+          <img class="configuration_img" src="images/configuration_images/easy.svg" alt="Dificultad: Fácil" title="Dificultad: Fácil">
+        </div>
+        <h3 class="configuration_caption">Fácil</h3>
+      </button>
+      <button class="configuration_card difficulty-normal">
+        <div class="configuration_img_container">
+          <img class="configuration_img" src="images/configuration_images/normal.svg" alt="Dificultad: Normal" title="Dificultad: Normal">
+        </div>
+        <h3 class="configuration_caption">Normal</h3>
+      </button>
+      <button class="configuration_card difficulty-hard">
+        <div class="configuration_img_container">
+          <img class="configuration_img" src="images/configuration_images/hard.svg" alt="Dificultad: Difícil" title="Dificultad: Difícil">
+        </div>
+        <h3 class="configuration_caption">Difícil</h3>
+      </button>
+    </div>
+
+    <button class="button-purple button-back-top difficulty hidden"><i class="fas fa-reply"></i>Volver atras</button>
+    <button class="button-onlytext button-tutorial"><i class="fas fa-exclamation-circle"></i>¿Como jugar?</button>
+  </section>
+  <section class="cards hidden">
+    <aside class="aside">
+      <img class="logo" src="images/logo/logo.svg" alt="">
+      <div class="aside_item">
+        <h4 class="aside_item_title"><i class="fas fa-times"></i>Errores</h4>
+        <div class="errors_counter">0</div>
+      </div>
+      <div class="aside_item">
+        <h4 class="aside_item_title"><i class="fas fa-stopwatch"></i>Tiempo</h4>
+        <div>
+          <span class="minute-ten">0</span>
+          <span class="minute-unit">0</span>
+          <span>:</span>
+          <span class="second-ten">0</span>
+          <span class="second-unit">0</span>
+          <span>s</span>
+        </div>
+      </div>
+      <button class="button-purple button-reset"><i class="fas fa-undo-alt"></i>Reset</button>
+    </aside>
+    <div class="congratulation hidden">
+      <div class="congratulation_card">
+        <h3 class="congratulation_title">¡Felicitaciones!</h3>
+        <p class="congratulation_message">Haz completado el desafio</p>
+        <div class="congratulation_data">
+          <div class="congratulation_data_card">
+            <h4 class="congratulation_caption"><i class="fas fa-times"></i>Errores</h4>
+            <span class="congratulation_errors">0</span>
+          </div>
+          <div class="congratulation_data_card">
+            <h4 class="congratulation_caption"><i class="fas fa-stopwatch"></i>Tiempo</h4>
+            <span class="congratulation_time">00:00s</span>
+          </div>
+        </div>
+        <button class="button-cian button-ranking"><i class="fas fa-crown"></i>Ranking</button>
+        <button class="button-purple button-play-again"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.7 158.7"><defs><style>.cls-1{fill:#ddd;stroke:#ddd;}.cls-1,.cls-2,.cls-3{stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#eee;stroke:#eee;}.cls-3{fill:#fff;stroke:#fff;}</style></defs><title>icon_cards</title><path class="cls-1" d="M21,1H61A19.93,19.93,0,0,1,81,21V81a19.93,19.93,0,0,1-20,20H21A19.93,19.93,0,0,1,1,81V21A20,20,0,0,1,20.7,1Z" transform="translate(0 0)"/><path class="cls-2" d="M49.4,29.4l40-.1a19.93,19.93,0,0,1,20,20v60a19.93,19.93,0,0,1-20,20l-40,.1a19.93,19.93,0,0,1-20-20V49.5A20,20,0,0,1,49.1,29.4Z" transform="translate(0 0)"/><path class="cls-3" d="M77.7,57.7h40a20.06,20.06,0,0,1,20,20v60a20.06,20.06,0,0,1-20,20h-40a20.06,20.06,0,0,1-20-20v-60A20.06,20.06,0,0,1,77.7,57.7Z" transform="translate(0 0)"/></svg>Jugar de Nuevo</button>
+      </div>
+    </div>
+    <div class="cards_container">
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+      <button class="card hidden"><img class="card_logo" src="images/logo/card_logo.svg" alt="Card_Logo"><div class="card_img_container"><img class="card_img" src="" alt="" title=""></div></button>
+    </div>
+  </section>
+  <section class="tutorial hidden">
+    <button class="button-purple button-back-top"><i class="fas fa-reply"></i>Volver atras</button>
+    <h2 class="caption">¿Como <span class="highlight">Jugar</span>?</h2>
+    <div class="main_container">
+      <div class="tutorial_card">
+        <h3 class="tutorial_caption">Selecciona una <span class="highlight">Categoría</span></h3>
+        <div class="tutorial_img_container">
+          <img class="tutorial_img" src="images/tutorial/category_countries.svg" alt="Categoría Países" title="Categoría Países">
+          <img class="tutorial_img" src="images/tutorial/category_animals.svg" alt="Categoría Animales" title="Categoría Animales">
+          <img class="tutorial_img" src="images/tutorial/category_developers.svg" alt="Categoría Desarrolladores" title="Categoría Desarrolladores">
+        </div>
+      </div>
+      <div class="tutorial_card">
+        <h3 class="tutorial_caption">Selecciona la <span class="highlight">Dificultad</span></h3>
+        <div class="tutorial_img_container">
+          <img class="tutorial_img" src="images/tutorial/difficulty_easy.svg" alt="Dificultad Fácil" title="Dificultad Fácil">
+          <img class="tutorial_img" src="images/tutorial/difficulty_normal.svg" alt="Dificultad Normal" title="Dificultad Normal">
+          <img class="tutorial_img" src="images/tutorial/difficulty_hard.svg" alt="Dificultad Difícil" title="Dificultad Difícil">
+        </div>
+      </div>
+      <div class="tutorial_card">
+        <h3 class="tutorial_caption">Empieza a <span class="highlight">Memorizar</span></h3>
+        <img class="tutorial_img-cards" src="images/tutorial/cards.svg" alt="Cartas" title="Cartas">
+      </div>
+    </div>
+  </section>
+  <section class="ranking hidden">
+    <button class="button-purple button-play-again"><svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.7 158.7"><defs><style>.cls-1{fill:#ddd;stroke:#ddd;}.cls-1,.cls-2,.cls-3{stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#eee;stroke:#eee;}.cls-3{fill:#fff;stroke:#fff;}</style></defs><title>icon_cards</title><path class="cls-1" d="M21,1H61A19.93,19.93,0,0,1,81,21V81a19.93,19.93,0,0,1-20,20H21A19.93,19.93,0,0,1,1,81V21A20,20,0,0,1,20.7,1Z" transform="translate(0 0)"/><path class="cls-2" d="M49.4,29.4l40-.1a19.93,19.93,0,0,1,20,20v60a19.93,19.93,0,0,1-20,20l-40,.1a19.93,19.93,0,0,1-20-20V49.5A20,20,0,0,1,49.1,29.4Z" transform="translate(0 0)"/><path class="cls-3" d="M77.7,57.7h40a20.06,20.06,0,0,1,20,20v60a20.06,20.06,0,0,1-20,20h-40a20.06,20.06,0,0,1-20-20v-60A20.06,20.06,0,0,1,77.7,57.7Z" transform="translate(0 0)"/></svg>Jugar de Nuevo</button>
+    <h2 class="caption"><span class="highlight"><i class="fas fa-crown"></i></span>Ranking</h2>
+    <div class="ranking_filter">
+      <div class="ranking_filter_divisor">
+      <label class="ranking_filter_label" for="category">Categoría:</label>
+        <select id="ranking_category" class="ranking_filter_selector" id="category" type="text">
+        <option value="Developers">Desarrolladores</option>
+        <option value="Countries">Países</option>
+        <option value="Animals">Animales</option>
+        </select>
+      </div>
+      <div class="ranking_filter_divisor">
+        <label class="ranking_filter_label" for="difficulty">Dificultad:</label>
+        <select id="ranking_difficulty" class="ranking_filter_selector" id="difficulty" type="text" list="Difficulties">
+          <option value="Easy">Fácil</option>
+          <option value="Normal">Normal</option>
+          <option value="Hard">Difícil</option>
+        </select>
+      </div>
+    </div>
+    <table class="ranking_table">
+      <tr>
+        <th class="ranking_table-header"><span class="highlight">P</span>osición</th>
+        <th class="ranking_table-header medium-column"><span class="highlight">N</span>ombre</th>
+        <th class="ranking_table-header medium-column"><span class="highlight">E</span>rrores</th>
+        <th class="ranking_table-header"><span class="highlight">T</span>iempo</th>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">1</td>
+        <td class="ranking_table-nicknames">Usuario N°1</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">2</td>
+        <td class="ranking_table-nicknames">Usuario N°2</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">3</td>
+        <td class="ranking_table-nicknames">Usuario N°3</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">4</td>
+        <td class="ranking_table-nicknames">Usuario N°4</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">5</td>
+        <td class="ranking_table-nicknames">Usuario N°5</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">6</td>
+        <td class="ranking_table-nicknames">Usuario N°6</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">7</td>
+        <td class="ranking_table-nicknames">Usuario N°7</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">8</td>
+        <td class="ranking_table-nicknames">Usuario N°8</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">9</td>
+        <td class="ranking_table-nicknames">Usuario N°9</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+      <tr>
+        <td class="ranking_table-position">10</td>
+        <td class="ranking_table-nicknames">Usuario N°10</td>
+        <td class="ranking_table-errors">0</td>
+        <td class="ranking_table-times">00:00s</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="https://www.gstatic.com/firebase/init.js"></script>
+
+  <script src="js/game.js"></script>
+  <script src="js/ranking.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.configuration{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  .logo{
+    margin-top: 50px;
+  }
+  .caption{
+    margin: 20px;
+  }
+  &_card{
+    width: 240px;
+    height: 300px;
+    border: 2px solid $black;
+    border-radius: 20px;
+    padding: 25px;
+    background-color: $cian-dark;
+    background-image: $cian-gradient;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: box-shadow .3s, transform .3s;
+    animation: appear-horizontal 1s .5s forwards;
+    &:hover{
+      box-shadow: 0 0 50px $white-shadow;
+      transform: scale(1.05);
+      .configuration_img_container{
+        background-color: $white-dark;
+        background-image: linear-gradient($blue, $blue-dark);
+      }
+    }
+  }
+  &_caption{
+    margin: 10px 0 0 0;
+    color: $blue-dark;
+  }
+  &_img_container{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: $white;
+    &:hover{
+      img{
+        transform: scale(1.05);
+      }
+    }
+  }
+  &_img{
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+  }
+}

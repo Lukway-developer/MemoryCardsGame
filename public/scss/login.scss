@@ -1,0 +1,14 @@
+@import "resources/data";
+@import "resources/animations";
+@import "resources/globals";
+@import "components/login";
+@import "media-query/laptop-s";
+@import "media-query/tablet";
+@import "media-query/phone-l";
+@import "media-query/phone-m";
+@import "media-query/phone-s";
+
+
+.hidden{
+  display: none;
+}

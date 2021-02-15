@@ -1,0 +1,228 @@
+.cards{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_container{
+    width: 80%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    opacity: 0;
+    animation: appear 1s .5s forwards;
+    &-easy{
+      display: grid;
+      grid-template-columns: repeat(3, 104px);
+      grid-template-rows: repeat(4, 130px);
+      gap: 20px;
+      justify-content: center;
+      align-content: center;
+    }
+    &-normal{
+      display: grid;
+      grid-template-columns: repeat(4, 104px);
+      grid-template-rows: repeat(4, 130px);
+      gap: 20px;
+      justify-content: center;
+      align-content: center;
+    }
+    &-hard{
+      display: grid;
+      grid-template-columns: repeat(6, 104px);
+      grid-template-rows: repeat(4, 130px);
+      gap: 20px;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+}
+.card{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid $black;
+  border-radius: 20px;
+  background-color: $cian;
+  background-image: $cian-gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow .3s, transform .3s;
+  transform-style: preserve-3d;
+  &:hover{
+    box-shadow: 0 0 30px $white-shadow;
+    transform: scale(1.05);
+  }
+  &_logo{
+    height: 50%;
+    margin-right: 2px;
+    position: absolute;
+    z-index: 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform .3s;
+    transform: rotateX(0deg);
+  }
+  &_img_container{
+    border-radius: 10px;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform .3s;
+  }
+  &_img{
+    width: 80%;
+    transition: transform .3s;
+  }
+}
+.aside{
+  width: 20%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  animation: to-left 1s .25s forwards;
+  .logo-mini{
+    position: static;
+    animation: none;
+  }
+  &_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &_title{
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    div{
+      font-family: $font-mono;
+      font-size: 1.4em;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}
+.congratulation{
+  background-color: $black-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  animation: appear .5s forwards;
+  &_card{
+    width: 300px;
+    height: fit-content;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 16px;
+    background-color: $blue-dark;
+    background-image: linear-gradient($blue-dark, $blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    animation: congratulation-card-border 1s .5s;
+    animation-iteration-count: 3;
+  }
+  &_title{
+    margin: 10px 0;
+    animation: congratulation-title 1s .5s;
+    animation-iteration-count: 3;
+  }
+  &_message{
+    color: $white-dark;
+  }
+  &_data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &_card{
+      width: 49%;
+    }
+    h4{
+      margin: 10px 0;
+    }
+    span{
+      font-size: 1.2em;
+    }
+  }
+  .button-play-again{
+    width: 100%;
+    margin-top: 10px;
+    position: static;
+    opacity: 1;
+    animation: none;
+  }
+  .button-ranking{
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@keyframes congratulation-card-border {
+  0%{
+    border-color: $white;
+  }
+  25%{
+    border-color: $green;
+  }
+  50%{
+    border-color: $white;
+  }
+  75%{
+    border-color: $green;
+  }
+  100%{
+    border-color: $white;
+  }
+}
+@keyframes congratulation-title {
+  0%{
+    color: $white;
+    transform: scale(1);
+  }
+  25%{
+    color: $green;
+    transform: scale(1.1);
+  }
+  50%{
+    color: $white;
+    transform: scale(1);
+  }
+  75%{
+    color: $green;
+    transform: scale(1.1);
+  }
+  100%{
+    color: $white;
+    transform: scale(1);
+  }
+}

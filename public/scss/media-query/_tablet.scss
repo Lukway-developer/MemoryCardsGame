@@ -1,0 +1,268 @@
+@media screen and (max-width: 768px){
+  body{
+    height: fit-content;
+    min-height: 100vh;
+  }
+  .logo{
+    width: 110px;
+    height: 110px;
+  }
+  .menu, .login{
+    padding: 20px;
+    .title{
+      margin: 30px 0;
+    }
+  }
+  .menu{
+    .logo{
+      width: 120px;
+      height: 120px;
+      min-height: 140px;
+    }
+  }
+  .tutorial{
+    overflow-y: auto;
+    height: fit-content;
+    h3{
+      font-size: 1.1rem;
+    }
+    .main_container{
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &_caption{
+      margin: 30px;
+    }
+    &_card{
+      width: 75%;
+      height: 300px;
+    }
+    &_img_container{
+      animation: appear 1s .5s forwards;
+      :nth-child(1){
+        animation: tutorial-card-1 4s 2s infinite;
+      }
+      :nth-child(2){
+        animation: tutorial-card-2 4s 2s infinite;
+      }
+      :nth-child(3){
+        animation: tutorial-card-3 4s 2s infinite;
+      }
+      &:hover{
+        :nth-child(1){
+          transform: none;
+        }
+        :nth-child(2){
+          transform: none;
+        }
+        :nth-child(3){
+          transform: none;
+        }
+      }
+    }
+    &_img{
+      &-cards{
+        animation: appear 1s .5s forwards, tutorial-card-4 4s 2s infinite;
+        &:hover{
+          filter: none;
+        }
+      }
+    }
+  }
+  .configuration{
+    &_card{
+      width: 200px;
+      height: 250px;
+      padding: 20px;
+    }
+    &_img_container{
+      padding: 10px;
+    }
+    .logo{
+      margin-top: 25px;
+    }
+  }
+  .cards{
+    flex-direction: column;
+    justify-content: space-around;
+    animation: appear 1s .5s forwards;
+    &_container{
+      width: 100%;
+      min-height: 85vh;
+      &-easy{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 15px;
+        column-gap: 10px;
+        padding: 10px 160px;
+      }
+      &-normal{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 15px;
+        column-gap: 10px;
+        padding: 10px 110px;
+      }
+      &-hard{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 15px;
+        column-gap: 10px;
+      }
+    }
+    .aside{
+      width: 100%;
+      height: fit-content;
+      min-height: 15vh;
+      flex-direction: row;
+      animation: appear 1s .5s forwards;
+      .logo{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 668px){
+  .button{
+    &-back-top{
+      width: fit-content;
+      padding: 6px 10px;
+      position: fixed;
+      z-index: 99999;
+      i{
+        margin: 0;
+      }
+    }
+    &-signout{
+      width: fit-content;
+      padding: 6px 10px;
+      position: fixed;
+      z-index: 99999;
+      i{
+        margin: 0;
+      }
+    }
+  }
+  .ranking{
+    &_filter{
+      width: 100%;
+      justify-content: space-around;
+      &_selector{
+        margin-top: 10px;
+        font-size: 1.1rem;
+      }
+    }
+    &_table{
+      font-size: .9rem;
+      &-header{
+        font-size: 1rem;
+        &-position{
+          width: 80px;
+        }
+        &-nicknames{
+          max-width: 200px;
+        }
+        &-errors{
+          width: 80px;
+        }
+        &-times{
+          width: 80px;
+        }
+      }
+    }
+    .button-play-again{
+      svg{
+        margin: 0;
+      }
+    }
+  }
+  .configuration{
+    &_card{
+      width: 160px;
+      height: 200px;
+      padding: 15px;
+    }
+    &_caption{
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    &_img_container{
+      border-radius: 10px;
+    }
+  }
+  .cards{
+    &_container{
+      &-easy{
+        padding: 10px 120px;
+      }
+      &-normal{
+        min-height: 75vh;
+        padding: 10px 90px;
+      }
+      &-hard{
+        min-height: 75vh;
+      }
+    }
+    .card{
+      &_logo{
+        height: 45%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 520px){
+  .ranking{
+    &_table{
+      &-header{
+        &-nicknames{
+          max-width: 140px;
+        }
+      }
+    }
+  }
+  .configuration{
+    .main_container{
+      flex-wrap: wrap;
+    }
+    &_card{
+      margin: 10px;
+    }
+  }
+  .cards{
+    &_container{
+      width: 90%;
+      &-easy{
+        min-height: 55vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 15px;
+        padding: 10px 20px;
+      }
+      &-normal{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px 20px;
+      }
+      &-hard{
+        min-height: 90vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+        padding: 10px 30px;
+      }
+    }
+    .card{
+      &_img_container{
+        top: 8px;
+        right: 8px;
+        bottom: 8px;
+        left: 8px;
+      }
+    }
+    .aside{
+      min-height: 10vh;
+    }
+  }
+}

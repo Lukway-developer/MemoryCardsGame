@@ -1,0 +1,74 @@
+@media screen and (max-width: 1024px){
+  .tutorial{
+    &_img_container{
+      :nth-child(1){
+        bottom: calc(50% - 100px);
+        left: calc(50% - 115px);
+      }
+      :nth-child(2){
+        top: calc(50% - 115px);
+        left: calc(50% - 60px);
+      }
+      :nth-child(3){
+        right: calc(50% - 115px);
+        bottom: calc(50% - 100px);
+      }
+    }
+    &_img{
+      width: 120px;
+      height: 150px;
+      &-cards{
+        width: 250px;
+      }
+    }
+  }
+  .ranking{
+    &_filter{
+      width: 640px;
+    }
+    &_table{
+      &-header{
+        &-position{
+          width: 120px;
+        }
+        &-nicknames{
+          width: 240px;
+        }
+        &-errors{
+          width: 140px;
+        }
+        &-times{
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .cards{
+    &_container{
+      width: 82%;
+      &-easy{
+        grid-template-columns: repeat(3, 96px);
+        grid-template-rows: repeat(4, 120px);
+        gap: 15px;
+      }
+      &-normal{
+        grid-template-columns: repeat(4, 96px);
+        grid-template-rows: repeat(4, 120px);
+        gap: 15px;
+      }
+      &-hard{
+        grid-template-columns: repeat(6, 96px);
+        grid-template-rows: repeat(4, 120px);
+        gap: 15px;
+      }
+    }
+  }
+  .card{
+    border-radius: 16px;
+  }
+  .aside{
+    width: 18%;
+  }
+}

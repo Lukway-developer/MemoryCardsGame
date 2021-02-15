@@ -1,0 +1,175 @@
+.ranking{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  .button-play-again{
+    animation: to-right .5s .5s forwards;
+  }
+  &_filter{
+    width: 760px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    animation: appear-horizontal 1s .5s forwards;
+    &_divisor{
+      display: inline-block;
+    }
+    &_label{
+      color: $white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    &_selector{
+      border: 2px solid $cian-dark;
+      padding: 2px 4px;
+      background-color: $black;
+      color: $cian;
+      font-family: $font-monserrat;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: border-color .3s, box-shadow .3s;
+      cursor: pointer;
+      outline: none;
+      &:hover{
+        box-shadow: 0 0 20px $white-shadow;
+      }
+      &:focus{
+        border-color: $white;
+      }
+      option{
+        background-color: $black;
+      }
+    }
+  }
+  &_table{
+    height: 450px;
+    border-collapse: collapse;
+    overflow: hidden;
+    &-header{
+      width: 200px;
+      border-bottom: 0px solid $cian;
+      padding: 5px;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+      animation: appear-borders .5s 1s forwards;
+      &-position{
+        width: 120px;
+      }
+      &-nicknames{
+        width: 240px;
+      }
+    }
+    &-nicknames, &-errors, .medium-column{
+      border-right: 0px solid $cian;
+      border-left: 0px solid $cian;
+      animation: appear-borders .5s 1s forwards;
+    }
+    &-nicknames, &-errors, &-times{
+      letter-spacing: 2px;
+    }
+    tr:nth-of-type(1){
+      opacity: 0;
+      animation: to-bottom .5s .75s forwards;
+    }
+    tr:nth-of-type(2){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s .90s forwards;
+      &:hover{
+        color: $cian;
+        font-size: 1.1em;
+      }
+    }
+    tr:nth-of-type(3){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 1.05s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+    tr:nth-of-type(4){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 1.2s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+    tr:nth-of-type(5){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 1.35s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+    tr:nth-of-type(6){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 1.50s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+    tr:nth-of-type(7){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 1.65s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+    tr:nth-of-type(8){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 1.80s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+    tr:nth-of-type(9){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 1.95s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+    tr:nth-of-type(10){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 2.10s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+    tr:nth-of-type(11){
+      transition: font-size .3s;
+      opacity: 0;
+      animation: to-bottom .5s 2.25s forwards;
+      &:hover{
+        font-size: 1.1em;
+        color: $cian;
+      }
+    }
+  }
+}

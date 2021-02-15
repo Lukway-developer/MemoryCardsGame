@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  background-color: $blue-dark;
+  background-image: $blue-gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  font-family: $font-monserrat;
+  position: relative;
+}
+.title{
+  margin: 30px 0;
+  color: $blue-dark;
+  font-size: 1.8rem;
+}
+.caption{
+  margin: 20px 0;
+  position: relative;
+  font-size: 1.7rem;
+  opacity: 0;
+  animation: appear-horizontal 1s .5s forwards;
+  i{
+    margin-right: 10px;
+  }
+  &::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px $black;
+    background-color: $cian-dark;
+    background-image: $cian-gradient;
+    position: absolute;
+    left: 0%;
+    bottom: -8px;
+  }
+}
+h3, h4{
+  i{
+    margin-right: 10px;
+  color: $cian;
+  font-size: 1.1em;
+  }
+}
+h3{
+  font-size: 1.3rem;
+}
+h4{
+  font-size: 1.2rem;
+}
+.logo{
+  width: 120px;
+  height: 120px;
+  min-height: 120px;
+  opacity: 0;
+  animation: appear-horizontal .75s .5s forwards;
+  &-mini{
+    width: 90px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    animation: appear-horizontal .75s .5s forwards;
+  }
+}
+.button_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.button{
+  height: 50px;
+  border: 2px solid $white;
+  border-radius: 25px;
+  padding: 6px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  text-decoration: none;
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .3s, box-shadow .3s;
+  svg{
+    height: 25px;
+    margin-right: 10px;
+  }
+  i{
+    margin-right: 10px;
+  }
+  &:hover{
+    box-shadow: 0 0 20px $black-shadow;
+  }
+  &-violet{
+    @extend .button;
+    background-color: $violet;
+    &:hover{
+      background-color: $violet-hover;
+    }
+  }
+  &-purple{
+    @extend .button;
+    background-color: $purple;
+    &:hover{
+      background-color: $purple-hover;
+      i{
+        color: $cian;
+      }
+      .cls-3{
+        transition: fill .3s;
+        fill: $cian;
+      }
+      .cls-2{
+        transition: fill .3s;
+        fill: $cian-dark;
+      }
+      .cls-1{
+        transition: fill .3s;
+        fill: $cian-hover;
+      }
+    }
+  }
+  &-cian{
+    @extend .button;
+    background-color: $cian-dark;
+    &:hover{
+      background-color: $cian-hover;
+    }
+  }
+  &-lukway{
+    @extend .button;
+    background-color: $lukway-dark;
+    &:hover{
+      background-color: $lukway-hover;
+    }
+  }
+  &-login, &-register{
+    @extend .button;
+    width: 49%;
+    padding: 10px 10px;
+    font-size: 14px;
+    i{
+      margin-right: 6px;
+    }
+  }
+  &-onlytext{
+    @extend .button;
+    height: 40px;
+    background: none;
+    margin-bottom: 20px;
+    border: none;
+    transition: color .3s, text-shadow .3s;
+    opacity: 0;
+    animation: appear 1s 1s forwards;
+    &:hover{
+      box-shadow: none;
+      color: $white-dark;
+      text-shadow: 0 0 5px $black;
+      i{
+        color: $cian;
+      }
+    }
+  }
+  &-back-top{
+    @extend .button;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    animation: to-left .5s .5s forwards;
+    i{
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+  &-play-again{
+    @extend .button;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    animation: to-left .5s .5s forwards;
+  }
+  &-signout{
+    @extend .button;
+    height: 40px;
+    border: 2px solid $red;
+    background-color: $white;
+    color: $red;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    animation: to-right .5s .5s forwards;
+    i{
+      transform: rotateY(180deg);
+    }
+    &:hover{
+      border: 2px solid $white;
+      background-color: $red-dark;
+      color: $white;
+    }
+  }
+}
+.main_container{
+  width: 100%;
+  height: 60%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.highlight{
+  color: $cian;
+}
