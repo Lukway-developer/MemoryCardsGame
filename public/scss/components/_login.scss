@@ -3,7 +3,7 @@
   height: 500px;
   border: 4px solid $black;
   border-radius: 30px;
-  padding: 30px 40px;
+  padding: 30px 30px;
   box-shadow: 0px 0px 50px $white-shadow;
   background-color: $cian;
   background-image: $cian-gradient;
@@ -19,7 +19,6 @@
     text-align: center;
     position: relative;
     opacity: 0;
-    animation: to-bottom .5s .75s forwards;
     &_text{
       margin: 0 20px;
       color: $blue-dark;
@@ -40,6 +39,14 @@
       &::after{
         left: 0;
       }
+    }
+    &-login{
+      @extend .divisor;
+      animation: to-bottom .5s .75s forwards;
+    }
+    &-or{
+      @extend .divisor;
+      animation: to-bottom .5s 1.85s forwards;
     }
   }
   &_input{
@@ -66,7 +73,7 @@
       }
       &:focus{
         border: 3px solid $purple;
-        box-shadow: 0 0 20px $black-shadow, 0 0 0 2px black;
+        box-shadow: 0 0 20px $black-shadow;
       }
     }
     &-email{
@@ -82,14 +89,21 @@
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content: space-between;;
-    :first-child{
+    justify-content: space-between;
+    :first-child, :last-child{
       opacity: 0;
       animation: to-bottom .5s 1.5s forwards;
     }
-    :last-child{
-      opacity: 0;
-      animation: to-bottom .5s 1.75s forwards;
+    .button-register{
+      background-color: $white;
+      border-color: $purple;
+      color: $purple;
+      &:hover{
+        background-color: $white-dark;
+        i{
+          color: $cian-dark;
+        }
+      }
     }
   }
   &_external{
@@ -184,5 +198,39 @@
   button{
     width: 100%;
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 425px){
+  .login{
+    width: calc(100% - 30px);
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 0px 0px 30px $white-shadow;
+    .divisor{
+      margin: 8px 0 12px;
+      &_text{
+        &::before, &::after{
+          width: 35%;
+        }
+      }
+    }
+    &_input{
+      &-email, &-password{
+        margin-bottom: 8px;
+      }
+    }
+    &_button_container{
+      height: fit-content;
+      flex-wrap: wrap;
+      :first-child{
+        margin-bottom: 8px;
+        opacity: 0;
+        animation: to-bottom .5s 1.5s forwards;
+      }
+      :last-child{
+        opacity: 0;
+        animation: to-bottom .5s 1.65s forwards;
+      }
+    }
   }
 }

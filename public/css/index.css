@@ -101,14 +101,14 @@ body {
   position: relative; }
 
 .title {
-  margin: 30px 0;
+  margin: 1rem 0;
   color: #202040;
-  font-size: 1.8rem; }
+  font-size: 2.25rem; }
 
 .caption {
   margin: 20px 0;
   position: relative;
-  font-size: 1.7rem;
+  font-size: 2.25rem;
   opacity: 0;
   animation: appear-horizontal 1s .5s forwards; }
   .caption i {
@@ -190,7 +190,9 @@ h4 {
     .button-purple:hover {
       background-color: #8d268d; }
       .button-purple:hover i {
-        color: #00FFCC; }
+        color: #00FFCC;
+        font-size: 16px;
+        transition: font .3s; }
       .button-purple:hover .cls-3 {
         transition: fill .3s;
         fill: #00FFCC; }
@@ -273,6 +275,56 @@ h4 {
 .highlight {
   color: #00FFCC; }
 
+@media screen and (max-width: 768px) {
+  body {
+    height: fit-content;
+    min-height: 100vh; }
+  .caption {
+    font-size: 2rem; }
+  .logo {
+    width: 110px;
+    height: 110px; } }
+
+@media screen and (max-width: 668px) {
+  .caption {
+    font-size: 1.8rem; }
+  .button-back-top {
+    width: fit-content;
+    padding: 6px 10px;
+    position: fixed;
+    z-index: 99999; }
+    .button-back-top i {
+      margin: 0; }
+  .button-signout {
+    width: fit-content;
+    padding: 6px 10px;
+    position: fixed;
+    z-index: 99999; }
+    .button-signout i {
+      margin: 0; } }
+
+@media screen and (max-width: 425px) {
+  .caption {
+    font-size: 1.6rem; }
+  .button-login, .button-register {
+    width: 100%; }
+  .button-login {
+    margin-bottom: 4px; }
+  .button-reset i {
+    margin: 0; } }
+
+@media screen and (max-width: 375px) {
+  .caption {
+    font-size: 1.5rem; }
+  .button, .button-violet, .button-purple, .button-cian, .button-lukway, .button-login, .button-register, .button-onlytext, .button-back-top, .button-play-again, .button-signout {
+    font-size: 16px; } }
+
+@media screen and (max-width: 320px) {
+  .button-back-top {
+    left: 10px; }
+  .button-signout, .button-play-again {
+    right: 10px; } }
+
 .menu {
   width: 400px;
   height: 500px;
@@ -288,11 +340,13 @@ h4 {
   align-items: center;
   overflow: hidden;
   animation: appear .75s; }
-  .menu .button, .menu .button-violet, .menu .button-purple, .menu .button-cian, .menu .button-lukway, .menu .button-login, .menu .button-register, .menu .button-onlytext, .menu .button-back-top, .menu .button-play-again, .menu .button-signout {
-    width: 100%; }
   .menu .title {
     opacity: 0;
     animation: appear-horizontal .75s .75s forwards; }
+  .menu .button_container {
+    height: 180px; }
+  .menu .button, .menu .button-violet, .menu .button-purple, .menu .button-cian, .menu .button-lukway, .menu .button-login, .menu .button-register, .menu .button-onlytext, .menu .button-back-top, .menu .button-play-again, .menu .button-signout {
+    width: 100%; }
   .menu .button-violet {
     opacity: 0;
     animation: to-bottom .75s 1s forwards; }
@@ -307,6 +361,23 @@ h4 {
   .menu .button-lukway {
     opacity: 0;
     animation: to-bottom .75s 1.75s forwards; }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    padding: 20px; }
+    .menu .title {
+      margin: 30px 0; }
+    .menu .logo {
+      width: 120px;
+      height: 120px;
+      min-height: 140px; } }
+
+@media screen and (max-width: 425px) {
+  .menu {
+    width: calc(100% - 30px);
+    box-shadow: 0px 0px 30px #f8f9fa46; }
+    .menu .title {
+      font-size: 1.7rem; } }
 
 .tutorial {
   width: 100%;
@@ -369,6 +440,56 @@ h4 {
       .tutorial_img-cards:hover {
         filter: drop-shadow(0 0 5px #F8F9FA); }
 
+@media screen and (max-width: 1024px) {
+  .tutorial_img_container :nth-child(1) {
+    bottom: calc(50% - 100px);
+    left: calc(50% - 115px); }
+  .tutorial_img_container :nth-child(2) {
+    top: calc(50% - 115px);
+    left: calc(50% - 60px); }
+  .tutorial_img_container :nth-child(3) {
+    right: calc(50% - 115px);
+    bottom: calc(50% - 100px); }
+  .tutorial_img {
+    width: 120px;
+    height: 150px; }
+    .tutorial_img-cards {
+      width: 250px; } }
+
+@media screen and (max-width: 768px) {
+  .tutorial {
+    overflow-y: auto;
+    height: fit-content; }
+    .tutorial h3 {
+      font-size: 1.1rem; }
+    .tutorial .main_container {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+    .tutorial_caption {
+      margin: 30px; }
+    .tutorial_card {
+      width: 75%;
+      height: 300px; }
+    .tutorial_img_container {
+      animation: appear 1s .5s forwards; }
+      .tutorial_img_container :nth-child(1) {
+        animation: tutorial-card-1 4s 2s infinite; }
+      .tutorial_img_container :nth-child(2) {
+        animation: tutorial-card-2 4s 2s infinite; }
+      .tutorial_img_container :nth-child(3) {
+        animation: tutorial-card-3 4s 2s infinite; }
+      .tutorial_img_container:hover :nth-child(1) {
+        transform: none; }
+      .tutorial_img_container:hover :nth-child(2) {
+        transform: none; }
+      .tutorial_img_container:hover :nth-child(3) {
+        transform: none; }
+    .tutorial_img-cards {
+      animation: appear 1s .5s forwards, tutorial-card-4 4s 2s infinite; }
+      .tutorial_img-cards:hover {
+        filter: none; } }
+
 .ranking {
   width: 100%;
   height: 100%;
@@ -386,14 +507,16 @@ h4 {
     width: 760px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     opacity: 0;
     animation: appear-horizontal 1s .5s forwards; }
     .ranking_filter_divisor {
-      display: inline-block; }
+      display: flex;
+      flex-direction: column; }
     .ranking_filter_label {
+      margin-bottom: 5px;
       color: #F8F9FA;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: bold;
       letter-spacing: 1px; }
     .ranking_filter_selector {
@@ -402,7 +525,7 @@ h4 {
       background-color: #222222;
       color: #00FFCC;
       font-family: "Montserrat Alternates", sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.05rem;
       font-weight: bold;
       letter-spacing: 1px;
       transition: border-color .3s, box-shadow .3s;
@@ -510,20 +633,6 @@ h4 {
         color: #00FFCC; }
 
 @media screen and (max-width: 1024px) {
-  .tutorial_img_container :nth-child(1) {
-    bottom: calc(50% - 100px);
-    left: calc(50% - 115px); }
-  .tutorial_img_container :nth-child(2) {
-    top: calc(50% - 115px);
-    left: calc(50% - 60px); }
-  .tutorial_img_container :nth-child(3) {
-    right: calc(50% - 115px);
-    bottom: calc(50% - 100px); }
-  .tutorial_img {
-    width: 120px;
-    height: 150px; }
-    .tutorial_img-cards {
-      width: 250px; }
   .ranking_filter {
     width: 640px; }
   .ranking_table-header-position {
@@ -535,129 +644,7 @@ h4 {
   .ranking_table-header-times {
     width: 140px; } }
 
-@media screen and (max-width: 900px) {
-  .cards_container {
-    width: 82%; }
-    .cards_container-easy {
-      grid-template-columns: repeat(3, 96px);
-      grid-template-rows: repeat(4, 120px);
-      gap: 15px; }
-    .cards_container-normal {
-      grid-template-columns: repeat(4, 96px);
-      grid-template-rows: repeat(4, 120px);
-      gap: 15px; }
-    .cards_container-hard {
-      grid-template-columns: repeat(6, 96px);
-      grid-template-rows: repeat(4, 120px);
-      gap: 15px; }
-  .card {
-    border-radius: 16px; }
-  .aside {
-    width: 18%; } }
-
-@media screen and (max-width: 768px) {
-  body {
-    height: fit-content;
-    min-height: 100vh; }
-  .logo {
-    width: 110px;
-    height: 110px; }
-  .menu, .login {
-    padding: 20px; }
-    .menu .title, .login .title {
-      margin: 30px 0; }
-  .menu .logo {
-    width: 120px;
-    height: 120px;
-    min-height: 140px; }
-  .tutorial {
-    overflow-y: auto;
-    height: fit-content; }
-    .tutorial h3 {
-      font-size: 1.1rem; }
-    .tutorial .main_container {
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center; }
-    .tutorial_caption {
-      margin: 30px; }
-    .tutorial_card {
-      width: 75%;
-      height: 300px; }
-    .tutorial_img_container {
-      animation: appear 1s .5s forwards; }
-      .tutorial_img_container :nth-child(1) {
-        animation: tutorial-card-1 4s 2s infinite; }
-      .tutorial_img_container :nth-child(2) {
-        animation: tutorial-card-2 4s 2s infinite; }
-      .tutorial_img_container :nth-child(3) {
-        animation: tutorial-card-3 4s 2s infinite; }
-      .tutorial_img_container:hover :nth-child(1) {
-        transform: none; }
-      .tutorial_img_container:hover :nth-child(2) {
-        transform: none; }
-      .tutorial_img_container:hover :nth-child(3) {
-        transform: none; }
-    .tutorial_img-cards {
-      animation: appear 1s .5s forwards, tutorial-card-4 4s 2s infinite; }
-      .tutorial_img-cards:hover {
-        filter: none; }
-  .configuration_card {
-    width: 200px;
-    height: 250px;
-    padding: 20px; }
-  .configuration_img_container {
-    padding: 10px; }
-  .configuration .logo {
-    margin-top: 25px; }
-  .cards {
-    flex-direction: column;
-    justify-content: space-around;
-    animation: appear 1s .5s forwards; }
-    .cards_container {
-      width: 100%;
-      min-height: 85vh; }
-      .cards_container-easy {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        row-gap: 15px;
-        column-gap: 10px;
-        padding: 10px 160px; }
-      .cards_container-normal {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        row-gap: 15px;
-        column-gap: 10px;
-        padding: 10px 110px; }
-      .cards_container-hard {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        row-gap: 15px;
-        column-gap: 10px; }
-    .cards .aside {
-      width: 100%;
-      height: fit-content;
-      min-height: 15vh;
-      flex-direction: row;
-      animation: appear 1s .5s forwards; }
-      .cards .aside .logo {
-        display: none; } }
-
 @media screen and (max-width: 668px) {
-  .button-back-top {
-    width: fit-content;
-    padding: 6px 10px;
-    position: fixed;
-    z-index: 99999; }
-    .button-back-top i {
-      margin: 0; }
-  .button-signout {
-    width: fit-content;
-    padding: 6px 10px;
-    position: fixed;
-    z-index: 99999; }
-    .button-signout i {
-      margin: 0; }
   .ranking_filter {
     width: 100%;
     justify-content: space-around; }
@@ -677,90 +664,13 @@ h4 {
       .ranking_table-header-times {
         width: 80px; }
   .ranking .button-play-again svg {
-    margin: 0; }
-  .configuration_card {
-    width: 160px;
-    height: 200px;
-    padding: 15px; }
-  .configuration_caption {
-    font-size: 1rem;
-    font-weight: bold; }
-  .configuration_img_container {
-    border-radius: 10px; }
-  .cards_container-easy {
-    padding: 10px 120px; }
-  .cards_container-normal {
-    min-height: 75vh;
-    padding: 10px 90px; }
-  .cards_container-hard {
-    min-height: 75vh; }
-  .cards .card_logo {
-    height: 45%; } }
+    margin: 0; } }
 
 @media screen and (max-width: 520px) {
   .ranking_table-header-nicknames {
-    max-width: 140px; }
-  .configuration .main_container {
-    flex-wrap: wrap; }
-  .configuration_card {
-    margin: 10px; }
-  .cards_container {
-    width: 90%; }
-    .cards_container-easy {
-      min-height: 55vh;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 15px;
-      padding: 10px 20px; }
-    .cards_container-normal {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      gap: 10px;
-      padding: 10px 20px; }
-    .cards_container-hard {
-      min-height: 90vh;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      gap: 10px;
-      padding: 10px 30px; }
-  .cards .card_img_container {
-    top: 8px;
-    right: 8px;
-    bottom: 8px;
-    left: 8px; }
-  .cards .aside {
-    min-height: 10vh; } }
-
-@media screen and (max-width: 425px) {
-  .menu, .login {
-    width: calc(100% - 30px);
-    box-shadow: 0px 0px 30px #f8f9fa46; }
-  .menu .title {
-    font-size: 1.7rem; }
-  .login .divisor_text::before, .login .divisor_text::after {
-    width: 35%; }
-  .login .login_button_container {
-    height: fit-content;
-    flex-wrap: wrap; }
-  .button-login, .button-register {
-    width: 100%; }
-  .button-login {
-    margin-bottom: 4px; }
-  .button-reset i {
-    margin: 0; }
-  .cards_container {
-    width: 100%;
-    padding: 10px 20px; }
-    .cards_container-easy {
-      gap: 10px; }
-    .cards_container-normal {
-      min-height: 70vh; }
-  .cards .aside {
-    margin: 15px 0; } }
+    max-width: 140px; } }
 
 @media screen and (max-width: 375px) {
-  .button, .button-violet, .button-purple, .button-cian, .button-lukway, .button-login, .button-register, .button-onlytext, .button-back-top, .button-play-again, .button-signout {
-    font-size: 16px; }
   .ranking_filter {
     padding: 0 5px; }
     .ranking_filter_label {
@@ -779,27 +689,7 @@ h4 {
       .ranking_table-header-errors {
         width: 80px; }
       .ranking_table-header-times {
-        width: 80px; }
-  .cards_container {
-    padding: 10px; }
-    .cards_container-easy {
-      min-height: 50vh; }
-    .cards_container-normal {
-      min-height: 65vh; }
-  .cards .card_img {
-    width: 90%; } }
-
-@media screen and (max-width: 320px) {
-  .caption {
-    font-size: 1.5rem; }
-  .button-back-top {
-    left: 10px; }
-  .button-signout, .button-play-again {
-    right: 10px; }
-  .cards_container-easy {
-    min-height: 40vh; }
-  .cards_container-normal {
-    min-height: 60vh; } }
+        width: 80px; } }
 
 .hidden {
   display: none; }

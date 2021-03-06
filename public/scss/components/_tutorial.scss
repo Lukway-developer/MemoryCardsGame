@@ -74,3 +74,80 @@
     }
   }
 }
+@media screen and (max-width: 1024px){
+  .tutorial{
+    &_img_container{
+      :nth-child(1){
+        bottom: calc(50% - 100px);
+        left: calc(50% - 115px);
+      }
+      :nth-child(2){
+        top: calc(50% - 115px);
+        left: calc(50% - 60px);
+      }
+      :nth-child(3){
+        right: calc(50% - 115px);
+        bottom: calc(50% - 100px);
+      }
+    }
+    &_img{
+      width: 120px;
+      height: 150px;
+      &-cards{
+        width: 250px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .tutorial{
+    overflow-y: auto;
+    height: fit-content;
+    h3{
+      font-size: 1.1rem;
+    }
+    .main_container{
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &_caption{
+      margin: 30px;
+    }
+    &_card{
+      width: 75%;
+      height: 300px;
+    }
+    &_img_container{
+      animation: appear 1s .5s forwards;
+      :nth-child(1){
+        animation: tutorial-card-1 4s 2s infinite;
+      }
+      :nth-child(2){
+        animation: tutorial-card-2 4s 2s infinite;
+      }
+      :nth-child(3){
+        animation: tutorial-card-3 4s 2s infinite;
+      }
+      &:hover{
+        :nth-child(1){
+          transform: none;
+        }
+        :nth-child(2){
+          transform: none;
+        }
+        :nth-child(3){
+          transform: none;
+        }
+      }
+    }
+    &_img{
+      &-cards{
+        animation: appear 1s .5s forwards, tutorial-card-4 4s 2s infinite;
+        &:hover{
+          filter: none;
+        }
+      }
+    }
+  }
+}

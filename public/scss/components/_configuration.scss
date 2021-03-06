@@ -12,7 +12,7 @@
     margin-top: 50px;
   }
   .caption{
-    margin: 20px;
+    margin: 65px 20px 30px;
   }
   &_card{
     width: 240px;
@@ -36,7 +36,7 @@
       transform: scale(1.05);
       .configuration_img_container{
         background-color: $white-dark;
-        background-image: linear-gradient($blue, $blue-dark);
+        background-image: $blue-gradient;
       }
     }
   }
@@ -60,5 +60,46 @@
     width: 100%;
     height: 100%;
     transition: transform .3s;
+  }
+}
+@media screen and (max-width: 768px){
+  .configuration{
+    &_card{
+      width: 200px;
+      height: 250px;
+      padding: 20px;
+    }
+    &_img_container{
+      padding: 10px;
+    }
+    .logo{
+      margin-top: 25px;
+    }
+  }
+}
+@media screen and (max-width: 668px){
+  .configuration{
+    &_card{
+      width: 160px;
+      height: 200px;
+      padding: 15px;
+    }
+    &_caption{
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    &_img_container{
+      border-radius: 10px;
+    }
+  }
+}
+@media screen and (max-width: 520px){
+  .configuration{
+    .main_container{
+      flex-wrap: wrap;
+    }
+    &_card{
+      margin: 10px;
+    }
   }
 }
