@@ -90,8 +90,8 @@ body {
   padding: 0;
   border: 0;
   margin: 0;
-  background-color: #202040;
-  background-image: linear-gradient(#202040, #602080);
+  background-color: #70368d;
+  background-image: linear-gradient(#202040, #4d1a66);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ body {
   position: relative;
   font-size: 2.25rem;
   opacity: 0;
-  animation: appear-horizontal 1s .5s forwards; }
+  animation: appear-horizontal .3s .2s forwards; }
   .caption i {
     margin-right: 10px; }
   .caption::after {
@@ -118,7 +118,6 @@ body {
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    box-shadow: 0 0 5px #222222;
     background-color: #09a37a;
     background-image: linear-gradient(#09a37a, #00FFCC);
     position: absolute;
@@ -141,13 +140,13 @@ h4 {
   height: 120px;
   min-height: 120px;
   opacity: 0;
-  animation: appear-horizontal .75s .5s forwards; }
+  animation: appear-horizontal .3s .2s forwards; }
   .logo-mini {
     width: 90px;
     position: absolute;
     top: 20px;
     left: 20px;
-    animation: appear-horizontal .75s .5s forwards; }
+    animation: appear-horizontal .3s .2s forwards; }
 
 .button_container {
   width: 100%;
@@ -159,7 +158,7 @@ h4 {
 
 .button, .button-violet, .button-purple, .button-cian, .button-lukway, .button-login, .button-register, .button-onlytext, .button-back-top, .button-play-again, .button-signout {
   height: 50px;
-  border: 2px solid #F8F9FA;
+  border: 0px;
   border-radius: 25px;
   padding: 6px 15px;
   display: flex;
@@ -173,14 +172,14 @@ h4 {
   letter-spacing: 1px;
   cursor: pointer;
   outline: none;
-  transition: background-color .3s, box-shadow .3s; }
+  transition: background-color .2s, box-shadow .2s; }
   .button svg, .button-violet svg, .button-purple svg, .button-cian svg, .button-lukway svg, .button-login svg, .button-register svg, .button-onlytext svg, .button-back-top svg, .button-play-again svg, .button-signout svg {
     height: 25px;
     margin-right: 10px; }
   .button i, .button-violet i, .button-purple i, .button-cian i, .button-lukway i, .button-login i, .button-register i, .button-onlytext i, .button-back-top i, .button-play-again i, .button-signout i {
     margin-right: 10px; }
   .button:hover, .button-violet:hover, .button-purple:hover, .button-cian:hover, .button-lukway:hover, .button-login:hover, .button-register:hover, .button-onlytext:hover, .button-back-top:hover, .button-play-again:hover, .button-signout:hover {
-    box-shadow: 0 0 20px #222222dd; }
+    box-shadow: 0 0 20px #2222224f; }
   .button-violet {
     background-color: #602080; }
     .button-violet:hover {
@@ -191,7 +190,6 @@ h4 {
       background-color: #8d268d; }
       .button-purple:hover i {
         color: #00FFCC;
-        font-size: 16px;
         transition: font .3s; }
       .button-purple:hover .cls-3 {
         transition: fill .3s;
@@ -223,7 +221,7 @@ h4 {
     border: none;
     transition: color .3s, text-shadow .3s;
     opacity: 0;
-    animation: appear 1s 1s forwards; }
+    animation: appear .5s .5s forwards; }
     .button-onlytext:hover {
       box-shadow: none;
       color: #DEE2E6;
@@ -256,7 +254,7 @@ h4 {
     top: 20px;
     right: 20px;
     opacity: 0;
-    animation: to-right .5s .5s forwards; }
+    animation: to-right .3s .4s forwards; }
     .button-signout i {
       transform: rotateY(180deg); }
     .button-signout:hover {
@@ -328,7 +326,6 @@ h4 {
 .login {
   width: 400px;
   height: 500px;
-  border: 4px solid #222222;
   border-radius: 30px;
   padding: 30px 30px;
   box-shadow: 0px 0px 50px #f8f9fa46;
@@ -339,7 +336,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  animation: appear .75s; }
+  animation: appear .2s; }
   .login .divisor, .login .divisor-login, .login .divisor-or {
     width: 100%;
     margin: 8px 0;
@@ -364,9 +361,9 @@ h4 {
       .login .divisor_text::after {
         left: 0; }
     .login .divisor-login {
-      animation: to-bottom .5s .75s forwards; }
+      animation: to-bottom .3s .4s forwards; }
     .login .divisor-or {
-      animation: to-bottom .5s 1.85s forwards; }
+      animation: to-bottom .3s .8s forwards; }
   .login_input-email, .nickname_input, .login_input-password {
     width: 100%;
     height: 50px;
@@ -385,16 +382,16 @@ h4 {
       opacity: 0.8; }
     .login_input-email:hover, .nickname_input:hover, .login_input-password:hover {
       background-color: #DEE2E6;
-      box-shadow: 0 0 20px #222222dd; }
+      box-shadow: 0 0 20px #2222224f; }
     .login_input-email:focus, .nickname_input:focus, .login_input-password:focus {
       border: 3px solid #B030B0;
-      box-shadow: 0 0 20px #222222dd; }
+      box-shadow: 0 0 20px #2222224f; }
   .login_input-email, .nickname_input {
     opacity: 0;
-    animation: to-bottom .5s 1s forwards; }
+    animation: to-bottom .3s .5s forwards; }
   .login_input-password {
     opacity: 0;
-    animation: to-bottom .5s 1.25s forwards; }
+    animation: to-bottom .3s .6s forwards; }
   .login_button_container {
     width: 100%;
     height: 50px;
@@ -402,7 +399,7 @@ h4 {
     justify-content: space-between; }
     .login_button_container :first-child, .login_button_container :last-child {
       opacity: 0;
-      animation: to-bottom .5s 1.5s forwards; }
+      animation: to-bottom .3s .7s forwards; }
     .login_button_container .button-register {
       background-color: #F8F9FA;
       border-color: #B030B0;
@@ -417,7 +414,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     opacity: 0;
-    animation: to-bottom .5s 2s forwards; }
+    animation: to-bottom .3s .9s forwards; }
     .login_external-button {
       width: 30%;
       height: 50px;
@@ -433,21 +430,21 @@ h4 {
       background-color: #ffffff; }
       .login_external .google:hover {
         background-color: #eeeeee;
-        box-shadow: 0 0 20px #222222dd; }
+        box-shadow: 0 0 20px #2222224f; }
     .login_external .facebook {
       background-color: #1778F2; }
       .login_external .facebook:hover {
         background-color: #1260c2;
-        box-shadow: 0 0 20px #222222dd; }
+        box-shadow: 0 0 20px #2222224f; }
     .login_external .twitter {
       background-color: #00ACEE;
       padding: 12px; }
       .login_external .twitter:hover {
         background-color: #008abe;
-        box-shadow: 0 0 15px #222222dd; }
+        box-shadow: 0 0 15px #2222224f; }
 
 .nickname {
-  background-color: #222222dd;
+  background-color: #2222224f;
   display: flex;
   justify-content: center;
   align-items: center;

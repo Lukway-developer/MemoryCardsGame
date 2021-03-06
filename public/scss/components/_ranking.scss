@@ -10,7 +10,7 @@
   text-align: center;
   overflow: hidden;
   .button-play-again{
-    animation: to-right .5s .5s forwards;
+    animation: to-right .3s .2s forwards;
   }
   &_filter{
     width: 760px;
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-evenly;
     opacity: 0;
-    animation: appear-horizontal 1s .5s forwards;
+    animation: appear-horizontal .3s .2s forwards;
     &_divisor{
       display: flex;
       flex-direction: column;
@@ -63,7 +63,7 @@
       padding: 5px;
       letter-spacing: 1px;
       font-size: 1.1rem;
-      animation: appear-borders .5s 1s forwards;
+      animation: appear-borders .2s .4s forwards;
       &-position{
         width: 120px;
       }
@@ -74,19 +74,19 @@
     &-nicknames, &-errors, .medium-column{
       border-right: 0px solid $cian;
       border-left: 0px solid $cian;
-      animation: appear-borders .5s 1s forwards;
+      animation: appear-borders .2s .4s forwards;
     }
     &-nicknames, &-errors, &-times{
       letter-spacing: 2px;
     }
     tr:nth-of-type(1){
       opacity: 0;
-      animation: to-bottom .5s .75s forwards;
+      animation: to-bottom .2s .5s forwards;
     }
     tr:nth-of-type(2){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s .90s forwards;
+      animation: to-bottom .2s .6s forwards;
       &:hover{
         color: $cian;
         font-size: 1.1em;
@@ -95,7 +95,7 @@
     tr:nth-of-type(3){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 1.05s forwards;
+      animation: to-bottom .2s .7s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;
@@ -104,7 +104,7 @@
     tr:nth-of-type(4){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 1.2s forwards;
+      animation: to-bottom .2s .8s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;
@@ -113,7 +113,7 @@
     tr:nth-of-type(5){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 1.35s forwards;
+      animation: to-bottom .2s .9s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;
@@ -122,7 +122,7 @@
     tr:nth-of-type(6){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 1.50s forwards;
+      animation: to-bottom .2s 1s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;
@@ -131,7 +131,7 @@
     tr:nth-of-type(7){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 1.65s forwards;
+      animation: to-bottom .2s 1.1s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;
@@ -140,7 +140,7 @@
     tr:nth-of-type(8){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 1.80s forwards;
+      animation: to-bottom .2s 1.2s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;
@@ -149,7 +149,7 @@
     tr:nth-of-type(9){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 1.95s forwards;
+      animation: to-bottom .2s 1.3s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;
@@ -158,7 +158,7 @@
     tr:nth-of-type(10){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 2.10s forwards;
+      animation: to-bottom .2s 1.4s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;
@@ -167,7 +167,7 @@
     tr:nth-of-type(11){
       transition: font-size .3s;
       opacity: 0;
-      animation: to-bottom .5s 2.25s forwards;
+      animation: to-bottom .2s 1.5s forwards;
       &:hover{
         font-size: 1.1em;
         color: $cian;

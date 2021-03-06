@@ -398,7 +398,7 @@ const setRanking = () => {
 }
 
 const dissolveItems = (disappearItems, appearItems) => {
-  animationTime = 500;
+  animationTime = 400;
   for (const key in disappearItems) {
     setTimeout(function(){
       disappearItems[key].classList.add("hidden");
@@ -418,13 +418,12 @@ const dissolveItems = (disappearItems, appearItems) => {
       {opacity: 0, transform: "perspective(100px) translateZ(-20px)"},
       {opacity: 1, transform: "perspective(100px) translateZ(0px)"}
     ],{
-      duration: animationTime,
-      delay: animationTime * 2
+      duration: animationTime
     })
   }
 }
 const dissolveSection = (disappearSection, appearSection) => {
-  animationTime = 500;
+  animationTime = 200;
   setTimeout(function(){
     disappearSection.classList.add("hidden");
     appearSection.classList.remove("hidden");

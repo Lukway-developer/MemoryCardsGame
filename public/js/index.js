@@ -10,8 +10,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 let database = firebase.database();
 
-setTimeout(()=> alert("Hola Jony, hola gente, espero que tengan una buena noche.\nTe dejo un juego para ver como esta tu memoria 🧠."), 2500)
-
 const menuSection = document.querySelector(".menu");
 const tutorialSection = document.querySelector(".tutorial");
 const rankingSection = document.querySelector(".ranking");

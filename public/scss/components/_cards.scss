@@ -12,7 +12,7 @@
     -webkit-perspective: 1000px;
     perspective: 1000px;
     opacity: 0;
-    animation: appear 1s .5s forwards;
+    animation: appear .3s .2s forwards;
     &-easy{
       display: grid;
       grid-template-columns: repeat(3, 104px);
@@ -43,7 +43,7 @@
   width: 100%;
   height: 100%;
   padding: 10px;
-  border: 2px solid $black;
+  border: 0px;
   border-radius: 20px;
   background-color: $cian;
   background-image: $cian-gradient;
@@ -56,7 +56,7 @@
   transition: box-shadow .3s, transform .3s;
   transform-style: preserve-3d;
   &:hover{
-    box-shadow: 0 0 30px $white-shadow;
+    box-shadow: 0 0 15px $white-shadow;
     transform: scale(1.05);
   }
   &_logo{
@@ -100,7 +100,7 @@
   justify-content: space-around;
   align-items: center;
   opacity: 0;
-  animation: to-left 1s .25s forwards;
+  animation: to-left .3s .2s forwards;
   .logo-mini{
     position: static;
     animation: none;
@@ -278,7 +278,7 @@
   .cards{
     flex-direction: column;
     justify-content: space-around;
-    animation: appear 1s .5s forwards;
+    animation: appear .3s .2s forwards;
     &_container{
       width: 100%;
       padding: 20px;
@@ -306,7 +306,7 @@
       height: fit-content;
       min-height: 15vh;
       flex-direction: row;
-      animation: appear 1s .5s forwards;
+      animation: appear .3s .5s forwards;
       .logo{
         display: none;
       }

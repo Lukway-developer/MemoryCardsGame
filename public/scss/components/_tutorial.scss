@@ -24,7 +24,7 @@
   &_caption{
     margin-bottom: 50px;
     opacity: 0;
-    animation: appear-horizontal 1s .5s forwards;
+    animation: appear-horizontal .3s .5s forwards;
   }
   &_img_container{
     width: 100%;
@@ -32,7 +32,7 @@
     margin: 0 auto;
     position: relative;
     opacity: 0;
-    animation: to-bottom 1s .5s forwards;
+    animation: appear .3s .6s forwards;
     :nth-child(1){
       bottom: calc(50% - 125px);
       left: calc(50% - 150px);
@@ -61,15 +61,16 @@
     width: 160px;
     height: 200px;
     position: absolute;
-    transition: transform .3s;
+    transition: transform .1s;
     &-cards{
       width: 300px;
       margin-bottom: 40px;
       opacity: 0;
-      transition: filter .3s;
-      animation: to-bottom 1s .5s forwards;
+      transition: filter .1s, transform .1s;
+      animation: appear .3s .6s forwards;
       &:hover{
-        filter: drop-shadow(0 0 5px $white);
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 5px $white-shadow);
       }
     }
   }

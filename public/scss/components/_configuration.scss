@@ -14,6 +14,10 @@
   .caption{
     margin: 65px 20px 30px;
   }
+  .button-back-top{
+    opacity: 1;
+    animation: unset;
+  }
   &_card{
     width: 240px;
     height: 300px;
@@ -30,13 +34,13 @@
     cursor: pointer;
     opacity: 0;
     transition: box-shadow .3s, transform .3s;
-    animation: appear-horizontal 1s .5s forwards;
+    animation: appear-horizontal .3s .4s forwards;
     &:hover{
-      box-shadow: 0 0 50px $white-shadow;
-      transform: scale(1.05);
+      img{
+        transform: scale(1.05);
+      }
       .configuration_img_container{
         background-color: $white-dark;
-        background-image: $blue-gradient;
       }
     }
   }
@@ -50,11 +54,6 @@
     border-radius: 20px;
     padding: 15px;
     background-color: $white;
-    &:hover{
-      img{
-        transform: scale(1.05);
-      }
-    }
   }
   &_img{
     width: 100%;
