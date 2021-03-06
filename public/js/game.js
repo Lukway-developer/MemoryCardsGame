@@ -68,6 +68,10 @@ let timerID;
 let timeValue;
 let time;
 
+// Ranking Selectors
+const categorySelector = document.getElementById("ranking_category");
+const difficultySelector = document.getElementById("ranking_difficulty");
+
 // Cards Images:
 animalsImg = [
   "images/card_images/animals/bird.svg",
@@ -160,16 +164,26 @@ let category;
 let difficulty;
 const setCategory = (categorySelected) => {
   category = categorySelected;
+  categorySelector.value = category;
   dissolveItems(categoryItems, difficultyItems);
 }
 const setDifficulty = (difficultySelected) => {
   difficulty = difficultySelected;
+  difficultySelector.value = difficulty;
+  showRanking();
   dissolveSection(configurationSection, cardsSection);
   setGameConfiguration();
 }
 const setGameConfiguration = () => {
-  let difficultyClass = difficulty.toLowerCase();
-  cardsContainer.classList.add(`cards_container-${difficultyClass}`);
+  if(difficulty == "Fácil"){
+    cardsContainer.classList.add(`cards_container-easy`);
+  }
+  if(difficulty == "Normal"){
+    cardsContainer.classList.add(`cards_container-normal`);
+  }
+  if(difficulty == "Difícil"){
+    cardsContainer.classList.add(`cards_container-hard`);
+  }
   showCards();
   setImagesCards();
   setTimeout(function(){
@@ -180,7 +194,7 @@ const setGameConfiguration = () => {
 let randomCards;
 const showCards = () => {
   let quantity;
-  if(difficulty == "Easy"){
+  if(difficulty == "Fácil"){
     quantity = 12;
     randomCards = [0,1,2,3,4,5,6,7,8,9,10,11];
   }
@@ -188,7 +202,7 @@ const showCards = () => {
     quantity = 16;
     randomCards = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
   }
-  if(difficulty == "Hard"){
+  if(difficulty == "Difícil"){
     quantity = 24;
     randomCards = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
   }
@@ -200,13 +214,13 @@ const setImagesCards = () => {
   let x = 0;
   let images;
   let randomImages = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-  if(category == "Developers"){
+  if(category == "Desarrolladores"){
     images = developersImg;
   }
-  if(category == "Countries"){
+  if(category == "Países"){
     images = countriesImg;
   }
-  if(category == "Animals"){
+  if(category == "Animales"){
     images = animalsImg;
   }
   randomCards = randomCards.sort(function() {return Math.random() - 0.5});
@@ -486,23 +500,23 @@ for (const key in cards) {
 }
 
 buttonCategoryDevelopers.addEventListener("click", function () {
-  setCategory("Developers");
+  setCategory("Desarrolladores");
 });
 buttonCategoryCountries.addEventListener("click", function () {
-  setCategory("Countries");
+  setCategory("Países");
 });
 buttonCategoryAnimals.addEventListener("click", function () {
-  setCategory("Animals");
+  setCategory("Animales");
 });
 
 buttonDifficultyEasy.addEventListener("click", function () {
-  setDifficulty("Easy");
+  setDifficulty("Fácil");
 });
 buttonDifficultyNormal.addEventListener("click", function () {
   setDifficulty("Normal");
 });
 buttonDifficultyHard.addEventListener("click", function () {
-  setDifficulty("Hard");
+  setDifficulty("Difícil");
 });
 
 buttonRanking.addEventListener("click", function(){

@@ -1,5 +1,3 @@
-const categorySelector = document.getElementById("ranking_category");
-const difficultySelector = document.getElementById("ranking_difficulty");
 const rankingNicknamesContainer = document.querySelectorAll(".ranking_table-nicknames");
 const rankingErrorsContainer = document.querySelectorAll(".ranking_table-errors");
 const rankingTimesContainer = document.querySelectorAll(".ranking_table-times");
@@ -24,8 +22,8 @@ const showRanking = () => {
   }
 };
 
-let categorySelectorValue = categorySelector.value;
-let difficultySelectorValue = difficultySelector.value;
+let categorySelectorValue;
+let difficultySelectorValue;
 showRanking();
 
 categorySelector.addEventListener("change", function(){
