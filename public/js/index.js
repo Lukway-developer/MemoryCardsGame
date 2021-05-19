@@ -22,6 +22,8 @@ const buttonBack = document.querySelectorAll(".button-back-top");
 // Ranking Selectors
 const categorySelector = document.getElementById("ranking_category");
 const difficultySelector = document.getElementById("ranking_difficulty");
+let categorySelectorValue = categorySelector.value;
+let difficultySelectorValue = difficultySelector.value;
 
 const userVerification = () => {
   // Detección del Estado del Usuario (login o no)

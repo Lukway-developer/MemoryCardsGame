@@ -175,13 +175,13 @@ const setDifficulty = (difficultySelected) => {
   setGameConfiguration();
 }
 const setGameConfiguration = () => {
-  if(difficulty == "Fácil"){
+  if(difficulty == "Easy"){
     cardsContainer.classList.add(`cards_container-easy`);
   }
   if(difficulty == "Normal"){
     cardsContainer.classList.add(`cards_container-normal`);
   }
-  if(difficulty == "Difícil"){
+  if(difficulty == "Hard"){
     cardsContainer.classList.add(`cards_container-hard`);
   }
   showCards();
@@ -194,7 +194,7 @@ const setGameConfiguration = () => {
 let randomCards;
 const showCards = () => {
   let quantity;
-  if(difficulty == "Fácil"){
+  if(difficulty == "Easy"){
     quantity = 12;
     randomCards = [0,1,2,3,4,5,6,7,8,9,10,11];
   }
@@ -202,7 +202,7 @@ const showCards = () => {
     quantity = 16;
     randomCards = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
   }
-  if(difficulty == "Difícil"){
+  if(difficulty == "Hard"){
     quantity = 24;
     randomCards = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
   }
@@ -214,13 +214,13 @@ const setImagesCards = () => {
   let x = 0;
   let images;
   let randomImages = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-  if(category == "Desarrolladores"){
+  if(category == "Developers"){
     images = developersImg;
   }
-  if(category == "Países"){
+  if(category == "Countries"){
     images = countriesImg;
   }
-  if(category == "Animales"){
+  if(category == "Animals"){
     images = animalsImg;
   }
   randomCards = randomCards.sort(function() {return Math.random() - 0.5});
@@ -500,23 +500,23 @@ for (const key in cards) {
 }
 
 buttonCategoryDevelopers.addEventListener("click", function () {
-  setCategory("Desarrolladores");
+  setCategory("Developers");
 });
 buttonCategoryCountries.addEventListener("click", function () {
-  setCategory("Países");
+  setCategory("Countries");
 });
 buttonCategoryAnimals.addEventListener("click", function () {
-  setCategory("Animales");
+  setCategory("Animals");
 });
 
 buttonDifficultyEasy.addEventListener("click", function () {
-  setDifficulty("Fácil");
+  setDifficulty("Easy");
 });
 buttonDifficultyNormal.addEventListener("click", function () {
   setDifficulty("Normal");
 });
 buttonDifficultyHard.addEventListener("click", function () {
-  setDifficulty("Difícil");
+  setDifficulty("Hard");
 });
 
 buttonRanking.addEventListener("click", function(){
