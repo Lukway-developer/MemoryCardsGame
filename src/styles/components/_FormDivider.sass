@@ -1,0 +1,23 @@
+.FormDivider
+  width: 100%
+  height: fit-content
+  // margin: 8px 0
+  text-align: center
+  position: relative
+  font: $font-montserrat-16
+  span
+    margin: 0 20px
+    color: $black
+    font-weight: bold
+    &::before, &::after
+      content: ""
+      width: 40%
+      height: 3px
+      border-radius: 2px
+      background-color: $black
+      position: absolute
+      top: calc(50% - 1px)
+    &::before
+      right: 0
+    &::after
+      left: 0
