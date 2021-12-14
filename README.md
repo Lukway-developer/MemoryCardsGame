@@ -1,4 +1,4 @@
-# Memory Cards Game <img src="https://github.com/Lukway-developer/MemoryCardsGame/blob/master/public/images/logo/favicon.svg" alt="Memory Game Logo" title="Memory Game Logo" height=30 />
+# Memory Cards Game <img src="https://github.com/lukway-dev/memory-cards-game/blob/gatsby-update/src/images/logo/favicon.svg" alt="Memory Game Logo" title="Memory Game Logo" height=30 />
 
 You can see this project here [Memory Cards Game](https://memorycards-game.web.app/).
 
