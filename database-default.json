@@ -1,0 +1,965 @@
+{
+  "nicknames" : [ "Lucas" ],
+  "ranking" : {
+    "animals" : {
+      "easy" : [
+      {
+        "position" : 1,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 2,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 3,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 4,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 5,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 6,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 7,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 8,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 9,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 10,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }],
+      "hard" : [
+      {
+        "position" : 1,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 2,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 3,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 4,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 5,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 6,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 7,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 8,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 9,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 10,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }],
+      "normal" : [
+      {
+        "position" : 1,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 2,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 3,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 4,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 5,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 6,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 7,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 8,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 9,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 10,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }]
+    },
+    "countries" : {
+      "easy" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }],
+      "hard" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }],
+      "normal" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }]
+    },
+    "developers" : {
+      "easy" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }],
+      "hard" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }],
+      "normal" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }]
+    }
+  },
+  "rankingTest" : {
+    "animals" : {
+      "easy" : [
+      {
+        "position" : 1,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 2,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 3,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 4,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 5,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 6,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 7,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 8,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 9,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 10,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }],
+      "hard" : [
+      {
+        "position" : 1,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 2,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 3,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 4,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 5,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 6,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 7,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 8,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 9,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 10,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }],
+      "normal" : [
+      {
+        "position" : 1,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 2,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 3,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 4,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 5,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 6,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 7,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 8,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 9,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }, {
+        "position" : 10,
+        "errors" : "",
+        "nickname" : "",
+        "time" : ""
+      }]
+    },
+    "countries" : {
+      "easy" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }],
+      "hard" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }],
+      "normal" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }]
+    },
+    "developers" : {
+      "easy" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }],
+      "hard" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }],
+      "normal" : [
+        {
+          "position" : 1,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 2,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 3,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 4,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 5,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 6,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 7,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 8,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 9,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }, {
+          "position" : 10,
+          "errors" : "",
+          "nickname" : "",
+          "time" : ""
+        }]
+    }
+  },
+  "users" : {
+    "cSxsSWZ1KZQMCBM49iNXXHCCdwf2" : {
+      "email" : "lukway.developer@gmail.com",
+      "nickname" : "Lukway"
+    },
+    "wSXWn8ZssxZCW9Qltsjx6B9QE2K3" : {
+      "email" : "lucas.ojeda@corebiz.ag",
+      "nickname" : "Lucas"
+    }
+  }
+}
